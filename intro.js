@@ -44,14 +44,14 @@ console.log(score);
 const name = 'Kishor';
 const age = 23;
 const rating = 4.5;   // it is in the decimal point but still treated as regular no , unlike int , float 
-const x = null; 
+const x4 = null; 
 const y = undefined;
 let z;
 
 console.log(typeof(name));   // string
 console.log(typeof(rating));  // number 
 console.log(typeof(age));    // number 
-console.log(typeof(x));      // object 
+console.log(typeof(x4));      // object 
 console.log(typeof(y));      // undefined
 console.log(typeof(z));      // undefined
 
@@ -240,5 +240,36 @@ const  todoCompleted = todos.filter(function(todo){
 
 console.log(todoCompleted);
 
+
+
+
+// Terninary operator in JS 
+const x = 10;
+const color = x > 10 ? 'red' : 'greeen';
+console.log(color);
+
+
+
+
+// Functions in js 
+
+function addNum(num1=2,num2=8){
+    console.log(num1*num2);
+}
+
+addNum(5,5);
+
+
+// Array Funtion ( clean and handy)
+
+const addNums2 = (num1 , num2) => {
+    console.log(num1+num2);
+}
+
+addNums2(3,8);
+
+
+
+todos.forEach((todo) => {console.log(todo)});
 
 
